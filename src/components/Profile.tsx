@@ -1,71 +1,83 @@
-import styles from "../styles/Profile.module.css";
+import styles from "../styles/Projects.module.css";
 
-function Profile() {
+function Projects() {
+  const projects = [
+    {
+      number: "01",
+      title: "CareConnect",
+      subtitle:
+        "Smart & Secure Digital Health Record Management System",
+      description:
+        "A digital health record management system designed to securely manage patient health information and provide controlled access to healthcare records.",
+      technologies:
+        "Java | Spring Boot | MySQL | REST APIs | JWT | React",
+      status: "In Development",
+    },
+    {
+      number: "02",
+      title: "Online Village Survey System",
+      subtitle:
+        "Village & Family Survey Management System",
+      description:
+        "A web-based system developed to manage village, surveyor, family, and member information through an organized database and administrative interface.",
+      technologies:
+        "PHP | MySQL | HTML | CSS | JavaScript | XAMPP",
+      status: "Completed",
+    },
+  ];
+
   return (
-    <section className={styles.hero} id="home">
-      <div className={styles.heroContent}>
-        <p className={styles.smallText}>HELLO, I'M</p>
+    <section className={styles.projects} id="projects">
 
-        <h1>
-          Payal <span>Belkhede</span>
-        </h1>
+      <div className={styles.heading}>
+        <p>MY WORK</p>
 
         <h2>
-          MCA Student <span>|</span> Aspiring IT Professional
+          Featured <span>Projects</span>
         </h2>
 
-        <p className={styles.description}>
-          I am an MCA student passionate about technology and software
-          development. I enjoy learning new technologies, building practical
-          projects, and exploring opportunities in the IT industry.
-        </p>
-
-        <div className={styles.buttons}>
-          <a href="#skills" className={styles.primaryButton}>
-            Explore My Skills
-          </a>
-
-          <a href="#contact" className={styles.secondaryButton}>
-            Contact Me
-          </a>
-
-          <a
-            href="/certificates/Payal_Belkhede_Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.resumeButton}
-          >
-            View Resume
-          </a>
-        </div>
-
-        <div className={styles.socialLinks}>
-          <a
-            href="https://www.linkedin.com/in/payal-belkhede-970731391"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
-
-          <a href="mailto:payalbelkhede23@gmail.com">
-            Email
-          </a>
-        </div>
+        <div className={styles.line}></div>
       </div>
 
-      <div className={styles.imageSection}>
-        <div className={styles.imageGlow}>
-          <div className={styles.profileImage}>
-            <img
-              src="/certificates/Profile.jpeg"
-              alt="Payal Belkhede"
-            />
+      <div className={styles.projectGrid}>
+
+        {projects.map((project) => (
+          <div
+            className={styles.projectCard}
+            key={project.number}
+          >
+
+            <div className={styles.projectTop}>
+              <span className={styles.number}>
+                {project.number}
+              </span>
+
+              <span className={styles.status}>
+                {project.status}
+              </span>
+            </div>
+
+            <h3>{project.title}</h3>
+
+            <h4>{project.subtitle}</h4>
+
+            <p className={styles.description}>
+              {project.description}
+            </p>
+
+            <div className={styles.technologies}>
+              <strong>Technologies</strong>
+
+              <p>{project.technologies}</p>
+            </div>
+
           </div>
-        </div>
+        ))}
+
       </div>
+
     </section>
   );
 }
 
-export default Profile;
+export default Projects;
