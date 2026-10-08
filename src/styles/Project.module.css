@@ -1,0 +1,209 @@
+.projects {
+  padding: 110px 8% 100px;
+  background: #fffdf8;
+}
+
+/* Heading */
+
+.heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.heading p {
+  margin-bottom: 12px;
+  color: #8b5e3c;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.heading h2 {
+  margin: 0;
+
+  color: #3b2a22;
+
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.heading h2 span {
+  color: #8b5e3c;
+}
+
+.line {
+  width: 55px;
+  height: 3px;
+
+  margin: 18px auto 0;
+
+  background: #8b5e3c;
+  border-radius: 10px;
+}
+
+/* Project Grid */
+
+.projectGrid {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+/* Project Card */
+
+.projectCard {
+  padding: 32px;
+
+  background: #f5ede2;
+
+  border: 1px solid #e4d8cc;
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(59, 42, 34, 0.06);
+
+  transition: 0.3s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-7px);
+
+  border-color: #d8c1aa;
+
+  box-shadow: 0 18px 40px rgba(59, 42, 34, 0.12);
+}
+
+/* Top */
+
+.projectTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 28px;
+}
+
+.number {
+  color: #8b5e3c;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.status {
+  padding: 7px 13px;
+
+  background: #d8c1aa;
+  color: #3b2a22;
+
+  border-radius: 20px;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* Title */
+
+.projectCard h3 {
+  margin-bottom: 10px;
+
+  color: #3b2a22;
+
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.projectCard h4 {
+  margin-bottom: 22px;
+
+  color: #8b5e3c;
+
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* Description */
+
+.description {
+  margin-bottom: 25px;
+
+  color: #6f6259;
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* Technologies */
+
+.technologies {
+  padding: 16px;
+
+  background: #fffdf8;
+
+  border: 1px solid #e4d8cc;
+  border-radius: 10px;
+}
+
+.technologies strong {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #8b5e3c;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.technologies p {
+  margin: 0;
+
+  color: #6b4a3a;
+
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* Tablet */
+
+@media (max-width: 800px) {
+  .projects {
+    padding: 90px 6%;
+  }
+
+  .heading h2 {
+    font-size: 40px;
+  }
+
+  .projectGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+  .projects {
+    padding: 80px 6%;
+  }
+
+  .projectCard {
+    padding: 25px;
+  }
+
+  .projectCard h3 {
+    font-size: 26px;
+  }
+
+  .projectCard h4 {
+    font-size: 14px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+}
