@@ -21,23 +21,24 @@ function Profile() {
         </p>
 
         <div className={styles.buttons}>
-  <a href="#skills" className={styles.primaryButton}>
-    Explore My Skills
-  </a>
+          <a href="#skills" className={styles.primaryButton}>
+            Explore My Skills
+          </a>
 
-  <a href="#contact" className={styles.secondaryButton}>
-    Contact Me
-  </a>
+          <a href="#contact" className={styles.secondaryButton}>
+            Contact Me
+          </a>
 
-  <a
-    href="/certificates/Payal_Belkhede_Resume.pdf"
-    target="_blank"
-    rel="noopener noreferrer"
-    className={styles.resumeButton}
-  >
-    View Resume
-  </a>
-</div>
+          <a
+            href="/certificates/Payal_Belkhede_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.resumeButton}
+          >
+            View Resume
+          </a>
+        </div>
+
         <div className={styles.socialLinks}>
           <a
             href="https://www.linkedin.com/in/payal-belkhede-970731391"
